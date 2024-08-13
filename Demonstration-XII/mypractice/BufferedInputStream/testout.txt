@@ -1,0 +1,8 @@
+Buffer in BufferedOutputStream:-
+In the context of BufferedOutputStream, a buffer is a region of memory that is used to store data temporarily before it is written to the underlying output stream. 
+The buffer is an array of bytes that acts as a intermediate storage area between the program and the output stream.
+Here's how it works:
+When you write data to a BufferedOutputStream, the data is first stored in the buffer.
+The buffer is filled with data until it reaches its capacity or until the flush() method is called.
+When the buffer is full or the flush() method is called, the data is written from the buffer to the underlying output stream in a single operation.
+The buffer is then cleared, and the process starts again.
